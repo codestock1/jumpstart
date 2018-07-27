@@ -60,3 +60,25 @@ img {
 .btn-primary:active {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
 }
+
+/* featured project */
+
+.featured-projects .image-container {
+  margin-top: 20px;
+  height: 20rem;
+}
+
+.sect-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.image-container img{
+  opacity: .75;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.image-container:hover img{
+  opacity: 1;
+  transform: scale(1.3);
+}
