@@ -7,8 +7,6 @@ body {
   line-height: 1.4;
 }
 
-/*Navigation Section*/
-
 img {
   width: 100%;
 }
@@ -17,12 +15,34 @@ img {
   overflow: hidden;
 }
 
-/*Jumbotron Section*/
+.btn-primary {
+  width: 11.4rem;
+  margin-top: 2.8rem;
+  padding: 1.3rem 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background-color: #399bd1;
+  transition: box-shadow .5s;
+}
 
+.btn-primary:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+.btn-primary:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+/*Navigation Section*/
+@media only screen and (max-width: 780px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+/*Jumbotron Section*/
 .jumbotron-bike {
   background-image: url("../images/jumbotron-bike.jpg");
 }
-
 .jumbotron {
   height: 44rem;
   padding-top: 10rem;
@@ -44,25 +64,13 @@ img {
   margin: auto;
 }
 
-.btn-primary {
-  width: 11.4rem;
-  margin-top: 2.8rem;
-  padding: 1.3rem 0;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  background-color: #399bd1;
-  transition: box-shadow .5s;
-}
-
-.btn-primary:hover {
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
-}
-
-.btn-primary:active {
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+@media only screen and (max-width: 780px) {
+  .jumbotron h1 {
+    font-size: 5.1rem;
+  }
 }
 
 /* Featured Project */
-
 .featured-projects .image-container {
   margin-top: 20px;
   height: 20rem;
@@ -93,4 +101,20 @@ img {
   background-color: #f3f3f3;
   text-align: center;
   padding: 5.2rem 0;
+}
+
+.strong h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.strong p {
+  max-width: 42rem;
+  margin: auto;
+}
+
+@media only screen and (max-width: 990px) {
+  .projects-section .image-container, .featured-projects .image-container  {
+    height: auto;
+  }
 }
